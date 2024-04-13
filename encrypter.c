@@ -2,12 +2,12 @@
 // Created by 최원일 on 2024/04/08.
 //
 #include <stdio.h>
-# define KEY_LENGTH 10 // Can be adjusted from 1 to 15
+# define KEY_LENGTH 8// Can be adjusted from 1 to 15
 
 int encrypt () {
     unsigned char ch ;
     FILE * fpIn , * fpOut ;
-    unsigned char key [ KEY_LENGTH ] = { 0x11 , 0x22 , 0x33, 0x44, 0x06 , 0x01 , 0x02 , 0x03, 0x04, 0x05 };
+    unsigned char key [ KEY_LENGTH ] = { 0x11 , 0x22 , 0x33, 0x44, 0x06 , 0x01 , 0x02 , 0x03};
     fpIn = fopen ("/Users/wonil/study/crypto-vigenere/plaintext.txt","r") ;
     if ( fpIn == NULL ) {
         perror ( " Error opening plaintext . txt " ) ;
